@@ -81,7 +81,7 @@ function useLocalEdits() {
 
   useEffect(() => {
     let alive = true;
-    fetch(`${import.meta.env.BASE_URL}saved-edits.json`)
+    fetch(`${import.meta.env.BASE_URL}saved-edits.json`, { cache: "no-store" })
       .then((response) => (response.ok ? response.json() : {}))
       .then((saved) => {
         if (!alive) return;
