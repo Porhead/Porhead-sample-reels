@@ -8,39 +8,35 @@ import {
 } from "react";
 import gsap from "gsap";
 import React from "react";
-import html2canvas from "html2canvas-pro";
-import { jsPDF } from "jspdf";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import {
-  ArrowDown,
-  ArrowUpRight,
-  Box,
-  ChevronDown,
-  ChevronUp,
-  CircleStop,
-  Cuboid,
-  Factory,
-  KeyRound,
-  Layers3,
-  LockKeyhole,
-  Mail,
-  MessageCircle,
-  Move,
-  MousePointer2,
-  PencilLine,
-  Phone,
-  Plus,
-  Printer,
-  RotateCcw,
-  Route,
-  Sparkles,
-  Type,
-  X,
-  Check,
-  Image as ImageIcon,
-  LogOut,
-  Upload,
-} from "lucide-react";
+import ArrowDown from "lucide-react/dist/esm/icons/arrow-down.js";
+import ArrowUpRight from "lucide-react/dist/esm/icons/arrow-up-right.js";
+import Box from "lucide-react/dist/esm/icons/box.js";
+import ChevronDown from "lucide-react/dist/esm/icons/chevron-down.js";
+import ChevronUp from "lucide-react/dist/esm/icons/chevron-up.js";
+import CircleStop from "lucide-react/dist/esm/icons/circle-stop.js";
+import Cuboid from "lucide-react/dist/esm/icons/cuboid.js";
+import Factory from "lucide-react/dist/esm/icons/factory.js";
+import KeyRound from "lucide-react/dist/esm/icons/key-round.js";
+import Layers3 from "lucide-react/dist/esm/icons/layers-3.js";
+import LockKeyhole from "lucide-react/dist/esm/icons/lock-keyhole.js";
+import Mail from "lucide-react/dist/esm/icons/mail.js";
+import MessageCircle from "lucide-react/dist/esm/icons/message-circle.js";
+import Move from "lucide-react/dist/esm/icons/move.js";
+import MousePointer2 from "lucide-react/dist/esm/icons/mouse-pointer-2.js";
+import PencilLine from "lucide-react/dist/esm/icons/pencil-line.js";
+import Phone from "lucide-react/dist/esm/icons/phone.js";
+import Plus from "lucide-react/dist/esm/icons/plus.js";
+import Printer from "lucide-react/dist/esm/icons/printer.js";
+import RotateCcw from "lucide-react/dist/esm/icons/rotate-ccw.js";
+import Route from "lucide-react/dist/esm/icons/route.js";
+import Sparkles from "lucide-react/dist/esm/icons/sparkles.js";
+import Type from "lucide-react/dist/esm/icons/type.js";
+import X from "lucide-react/dist/esm/icons/x.js";
+import Check from "lucide-react/dist/esm/icons/check.js";
+import ImageIcon from "lucide-react/dist/esm/icons/image.js";
+import LogOut from "lucide-react/dist/esm/icons/log-out.js";
+import Upload from "lucide-react/dist/esm/icons/upload.js";
 import { Editable } from "./Editable";
 import {
   NAV,
@@ -51,7 +47,6 @@ import {
   STRENGTHS,
 } from "./data";
 import "./styles.css";
-import savedEdits from "./saved-edits.json";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -67,14 +62,42 @@ const ICONS = {
 const EDIT_KEY = "porhead-product-portfolio-edits-v2";
 
 function useLocalEdits() {
-  const [edits, setEdits] = useState(() => {
-    try {
-      const localEdits = JSON.parse(localStorage.getItem(EDIT_KEY)) || {};
-      return { ...savedEdits, ...localEdits };
-    } catch {
-      return { ...savedEdits };
-    }
-  });
+  const [edits, setEdits] = useState({});
+  const [baseEdits, setBaseEdits] = useState({});
+  const [ready, setReady] = useState(false);
+
+  useEffect(() => {
+    let alive = true;
+    fetch(`${import.meta.env.BASE_URL}saved-edits.json`)
+      .then((response) => (response.ok ? response.json() : {}))
+      .then((saved) => {
+        if (!alive) return;
+        let localEdits = {};
+        try {
+          localEdits = JSON.parse(localStorage.getItem(EDIT_KEY)) || {};
+        } catch {
+          localEdits = {};
+        }
+        setBaseEdits(saved);
+        setEdits({ ...saved, ...localEdits });
+        setReady(true);
+      })
+      .catch(() => {
+        if (!alive) return;
+        let localEdits = {};
+        try {
+          localEdits = JSON.parse(localStorage.getItem(EDIT_KEY)) || {};
+        } catch {
+          localEdits = {};
+        }
+        setEdits(localEdits);
+        setReady(true);
+      });
+
+    return () => {
+      alive = false;
+    };
+  }, []);
 
   const persistEdits = useCallback((nextEdits) => {
     try {
@@ -91,8 +114,9 @@ function useLocalEdits() {
   }, []);
 
   useEffect(() => {
+    if (!ready) return;
     persistEdits(edits);
-  }, [edits, persistEdits]);
+  }, [edits, ready, persistEdits]);
 
   const syncEdits = useCallback(() => {
     persistEdits(edits);
@@ -103,8 +127,8 @@ function useLocalEdits() {
   }, []);
 
   const reset = useCallback(() => {
-    setEdits({ ...savedEdits });
-  }, []);
+    setEdits({ ...baseEdits });
+  }, [baseEdits]);
 
   const remove = useCallback((key) => {
     setEdits((current) => {
@@ -1060,6 +1084,11 @@ function App() {
         ? document.querySelector(".case-study__panel")
         : document.querySelector(".site");
       if (!target) throw new Error("No PDF target");
+
+      const [{ default: html2canvas }, { jsPDF }] = await Promise.all([
+        import("html2canvas-pro"),
+        import("jspdf"),
+      ]);
 
       const canvas = await html2canvas(target, {
         scale: Math.min(2, Math.max(1.5, window.devicePixelRatio || 1)),
