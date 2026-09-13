@@ -50,6 +50,18 @@ import "./styles.css";
 
 gsap.registerPlugin(ScrollTrigger);
 
+const DRAG_SCROLL_MULTIPLIER = 2.35;
+
+function resolveAssetPath(value) {
+  if (!value) return value;
+  if (/^(data:|blob:|https?:|file:|#)/i.test(value)) return value;
+
+  const base = import.meta.env.BASE_URL || "./";
+  const normalizedBase = base.endsWith("/") ? base : `${base}/`;
+  const relativePath = value.replace(/^\.?\//, "");
+  return `${normalizedBase}${relativePath}`;
+}
+
 const ICONS = {
   Box,
   Cuboid,
@@ -263,7 +275,7 @@ function ImageEditor({ target, onClose, onSave, onReset }) {
         </div>
 
         <div className="image-editor__preview">
-          {url ? <img src={url} alt="图片预览" /> : <span>暂无图片</span>}
+          {url ? <img src={resolveAssetPath(url)} alt="图片预览" /> : <span>暂无图片</span>}
         </div>
 
         <label className="image-editor__upload">
@@ -806,7 +818,7 @@ function App() {
     (key, fallback, extraClass = "") => {
       const src = image(key, fallback);
       return {
-        src,
+        src: resolveAssetPath(src),
         className: [extraClass, editing ? "is-image-editable" : ""].filter(Boolean).join(" "),
         "data-image-edit-key": key,
         "data-image-edit-fallback": fallback,
@@ -1016,7 +1028,9 @@ function App() {
       if (!state.moved && distance < 6) return;
 
       state.moved = true;
-      window.scrollBy(state.lastX - event.clientX, state.lastY - event.clientY);
+      const deltaX = (state.lastX - event.clientX) * DRAG_SCROLL_MULTIPLIER;
+      const deltaY = (state.lastY - event.clientY) * DRAG_SCROLL_MULTIPLIER;
+      window.scrollBy(deltaX, deltaY);
       state.lastX = event.clientX;
       state.lastY = event.clientY;
       document.body.classList.add("is-dragging-page");
@@ -1758,9 +1772,9 @@ function App() {
         project={activeProject}
         onClose={closeProject}
         editing={editing}
-        detailImage={image(`case-${activeProject?.id}`, activeProject?.detailImage)}
+        detailImage={resolveAssetPath(image(`case-${activeProject?.id}`, activeProject?.detailImage))}
         onImageEdit={(event) => openImageEditor(event, `case-${activeProject?.id}`, activeProject?.detailImage)}
-        onImagePreview={() => setImagePreview(image(`case-${activeProject?.id}`, activeProject?.detailImage))}
+        onImagePreview={() => setImagePreview(resolveAssetPath(image(`case-${activeProject?.id}`, activeProject?.detailImage)))}
         renderEditable={editable}
         onExportPdf={exportPageToPdf}
       />

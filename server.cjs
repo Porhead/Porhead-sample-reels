@@ -6,7 +6,7 @@ const { exec } = require("node:child_process");
 const root = path.join(__dirname, "dist");
 const host = "127.0.0.1";
 const preferredPort = Number(process.env.PORT || 8787);
-const savedEditsPath = path.join(__dirname, "src", "saved-edits.json");
+const savedEditsPath = path.join(__dirname, "public", "saved-edits.json");
 
 const types = {
   ".html": "text/html; charset=utf-8",
