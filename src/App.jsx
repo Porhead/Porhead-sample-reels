@@ -47,6 +47,7 @@ import {
   STRENGTHS,
 } from "./data";
 import "./styles.css";
+import defaultEdits from "./default-edits.json";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -71,7 +72,7 @@ const ICONS = {
   Layers3,
 };
 
-const EDIT_KEY = "porhead-product-portfolio-edits-v2";
+const EDIT_KEY = "porhead-product-portfolio-edits-v3";
 
 function useLocalEdits() {
   const [edits, setEdits] = useState({});
@@ -90,8 +91,9 @@ function useLocalEdits() {
         } catch {
           localEdits = {};
         }
-        setBaseEdits(saved);
-        setEdits({ ...saved, ...localEdits });
+        const mergedBase = { ...defaultEdits, ...saved };
+        setBaseEdits(mergedBase);
+        setEdits({ ...mergedBase, ...localEdits });
         setReady(true);
       })
       .catch(() => {
@@ -102,7 +104,8 @@ function useLocalEdits() {
         } catch {
           localEdits = {};
         }
-        setEdits(localEdits);
+        setBaseEdits(defaultEdits);
+        setEdits({ ...defaultEdits, ...localEdits });
         setReady(true);
       });
 

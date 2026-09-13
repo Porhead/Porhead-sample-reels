@@ -1,0 +1,533 @@
+{
+  "capabilities-title-2": "I\nBRING.",
+  "brand-name": "周添瑞",
+  "brand-nickname": "Porhead",
+  "hero-eyebrow": "意向岗位:IP衍生品 PM / 玩具产品经理 / 产品企划",
+  "image:about-portrait": "./assets/edited-about-portrait.jpg",
+  "image:hero-badge": "./assets/edited-hero-badge.jpg",
+  "metric-0-value": "实习经验:",
+  "metric-1-value": "布鲁可",
+  "metric-2-value": "玩家时代",
+  "metric-3-value": "下一份....",
+  "metric-0-label": "从大一大二开始积累实战经验",
+  "metric-1-label": "学习项目全流程，触及监修，BOM，校对，SKU，工厂打样，试色",
+  "metric-2-label": "玩具设计。玩法策划，社交互动",
+  "metric-3-label": "期待更高的舞台",
+  "image:project-rhino-vendor": "./assets/edited-rhino-card.jpg",
+  "image:case-rhino-vendor": "./assets/edited-rhino-case.jpg",
+  "case-rhino-vendor-cn": "纯机械自动贩卖机 / Rhino建模实现结构功能原型",
+  "case-rhino-vendor-step-0-name": "问题",
+  "case-rhino-vendor-step-1-name": "洞察",
+  "case-rhino-vendor-step-1-title": "外观体现结构，结构服务外观",
+  "case-rhino-vendor-step-2-name": "决定",
+  "case-rhino-vendor-step-3-name": "设计",
+  "case-rhino-vendor-step-3-copy": "在 Rhino 中建立可实现的物理结构，不断优化完善结构本身，利用外观让结构发挥更便捷的展示途径",
+  "case-rhino-vendor-step-4-copy": "在早期设计结构和外观时就考虑到后期装配和打印的步骤，大大减少了后期3D实体打样的时间成本",
+  "case-rhino-vendor-step-4-name": "原型制作",
+  "case-rhino-vendor-step-5-name": "结果",
+  "case-rhino-vendor-year": "2025",
+  "case-rhino-vendor-step-2-title": "先研究结构，再合并成整体",
+  "case-rhino-vendor-step-1-copy": "一个可运行的结构比一张漂亮渲染图更能证明设计判断。先从机构逻辑入手，再让外观服从结构。",
+  "case-rhino-vendor-step-0-title": "结构练习对象如何成为完整产品？",
+  "image:project-horse-magnet": "./assets/edited-horse-card.jpg",
+  "image:case-horse-magnet": "./assets/edited-horse-case.jpg",
+  "case-horse-magnet-category": "PODUCT DESIGN",
+  "case-horse-magnet-summary": "源自于《爆丸小子》的童年玩法所构思的马年玩具，有更大的落地空间和更强的寓意表达",
+  "case-horse-magnet-tag-3": "Rhino",
+  "case-horse-magnet-step-0-name": "问题",
+  "case-horse-magnet-step-0-title": "生肖玩具如何不止步外观情绪玩具？",
+  "case-horse-magnet-step-1-name": "洞悉",
+  "case-horse-magnet-step-1-copy": "磁吸拆装可以自然地解释“马”的部件关系，用户通过动作理解结构，而不是靠大段说明，或者情感故事支撑。",
+  "case-horse-magnet-step-3-name": "设计",
+  "case-horse-magnet-step-2-name": "决定",
+  "case-horse-magnet-step-4-name": "原型制作",
+  "case-horse-magnet-step-5-name": "结果",
+  "case-horse-magnet-step-4-title": "3D 建模与渲染",
+  "case-horse-magnet-step-4-copy": "用 Rhino 建立分件结构，通过 KeyShot 检查配色与展示状态，验证拆装后的完整形态。",
+  "project-rhino-vendor-cn": "纯机械结构自动贩卖机/Rhino建模实现结构功能原型",
+  "image:project-club-badge": "./assets/edited-badge-card.jpg",
+  "case-club-badge-category": "Product ization",
+  "case-club-badge-step-0-name": "问题",
+  "case-club-badge-step-1-name": "洞察",
+  "case-club-badge-step-2-name": "决定",
+  "case-club-badge-step-3-name": "设计",
+  "case-club-badge-step-4-name": "原型制作",
+  "case-club-badge-step-5-name": "结果",
+  "case-club-badge-step-0-copy": "金属徽章与亚克力产品需要更高成本。项目要测试一条低成本、可重复、可交给多人执行的小批量流水线。",
+  "case-club-badge-step-2-title": "用试错不断完善最终产品",
+  "case-club-badge-step-4-copy": "经历断槽、开裂、气泡、操作时间过短等问题，最终固定石膏与水泥的比例及加水量还有制作流程以及时长。",
+  "image:case-club-badge": "./assets/edited-badge-case.jpg",
+  "image:project-club-identity": "./assets/edited-identity-card.jpg",
+  "image:case-club-identity": "./assets/edited-identity-case.jpg",
+  "case-club-identity-category": "VISUAL IDENTITY",
+  "case-club-identity-step-0-name": "问题",
+  "case-club-identity-step-1-name": "洞悉",
+  "case-club-identity-step-3-name": "设计",
+  "case-club-identity-step-4-name": "原型",
+  "case-club-identity-step-5-name": "结果",
+  "project-club-newspaper-summary": "把招新物料当成一个信息产品：用广式视觉、通缉令式首页和报纸式信息结构，完成从版式到实物的传播。",
+  "image:project-club-newspaper": "./assets/edited-newspaper-card.jpg",
+  "project-club-newspaper-title": "NEWSPAPER DESIGN",
+  "case-club-newspaper-step-0-name": "问题",
+  "case-club-newspaper-step-1-name": "洞悉",
+  "case-club-newspaper-category": "COMMUNICATION",
+  "case-club-newspaper-title": "NEWSPAPER DESIGN",
+  "case-club-newspaper-step-2-name": "决定",
+  "case-club-newspaper-step-3-name": "设计",
+  "case-club-newspaper-step-4-name": "原型",
+  "case-club-newspaper-step-5-name": "结果",
+  "case-club-identity-step-2-name": "决定",
+  "case-club-newspaper-step-1-copy": "报纸的信息密度、折叠关系、纸张触感和复古气质，都比一张传单更贴合协会内容与传播场景。",
+  "case-club-newspaper-step-3-title": "从报纸气质倒推信息删减做设计避让",
+  "case-club-newspaper-step-4-title": "从哑光铜版纸到道林纸",
+  "case-club-newspaper-step-4-copy": "起初为了色彩还原度和手感细腻选择了铜版纸制作了原型，后量产采用了80g的道林纸。",
+  "image:case-club-newspaper": "./assets/edited-newspaper-case.jpg",
+  "case-ip-visual-category": "IP & VISUAL",
+  "case-ip-visual-year": "2024",
+  "case-ip-visual-step-0-name": "问题",
+  "case-ip-visual-step-1-name": "洞悉",
+  "case-ip-visual-step-2-name": "决定",
+  "case-ip-visual-step-3-name": "设计",
+  "case-ip-visual-step-4-name": "原型",
+  "case-ip-visual-step-5-name": "决定",
+  "strength-01-title": "产品思维",
+  "strength-02-title": "3D 外观+结构设计",
+  "strength-03-title": "样品制作以及上色 + 成本控制",
+  "strength-04-title": "IP设计逻辑 / 商业意识",
+  "strength-05-title": "流程总结+SOP",
+  "strength-05-copy": "会把一次性的工艺或创意沉淀为模板、流程和 SOP，让经验可以被团队复用。",
+  "strength-06-title": "审美+行动力",
+  "strength-06-copy": "为了自己的目标和给自己制定的指标反复的打磨直到满意。",
+  "contact-title-3": "FUNNY.",
+  "contact-email": "MAIL:2019875211@qq.com",
+  "contact-phone": "WX:189 6397 2976",
+  "hero-title-3": "FUNNY!",
+  "about-body": "我长期关注模型、潮玩与 IP 衍生品。在上海布鲁可科技有限公司实习期间，参与多个产品研发项目，覆盖 IP 监修、BOM、包装物料、工厂打样与跨部门协作。下一阶段，我希望进一步进入产品开发、IP 衍生品企划与项目管理。",
+  "case-rhino-vendor-category": "FUNCTIONAL PROTOTYPE",
+  "strength-01-copy": "先定义问题、用户与商业目标，再决定设计方向；不只把画得好看当成产品成立。",
+  "contact-second-phone": "PHONE:189 7188 2194",
+  "style:strength-01-copy": {
+    "fontSize": 13
+  },
+  "style:strength-01-title": {
+    "fontSize": 37
+  },
+  "style:strength-02-copy": {
+    "fontSize": 13
+  },
+  "style:strength-03-copy": {
+    "fontSize": 13
+  },
+  "style:strength-04-copy": {
+    "fontSize": 13
+  },
+  "style:strength-05-copy": {
+    "fontSize": 13
+  },
+  "style:strength-06-title": {
+    "fontSize": 37
+  },
+  "style:strength-06-copy": {
+    "fontSize": 13
+  },
+  "style:strength-03-title": {
+    "fontSize": 37
+  },
+  "style:strength-02-title": {
+    "fontSize": 37
+  },
+  "style:strength-04-title": {
+    "fontSize": 37
+  },
+  "style:strength-05-title": {
+    "fontSize": 37
+  },
+  "style:case-ip-visual-step-0-name": {
+    "fontSize": 20
+  },
+  "style:case-ip-visual-step-1-name": {
+    "fontSize": 20
+  },
+  "style:case-ip-visual-step-2-name": {
+    "fontSize": 20
+  },
+  "style:case-ip-visual-step-3-name": {
+    "fontSize": 20
+  },
+  "style:case-ip-visual-step-4-name": {
+    "fontSize": 20
+  },
+  "style:case-ip-visual-step-5-name": {
+    "fontSize": 20
+  },
+  "style:case-ip-visual-step-0-title": {
+    "fontSize": 20
+  },
+  "style:case-ip-visual-step-0-copy": {
+    "fontSize": 20
+  },
+  "style:case-ip-visual-step-1-title": {
+    "fontSize": 20
+  },
+  "style:case-ip-visual-step-1-copy": {
+    "fontSize": 20
+  },
+  "style:case-ip-visual-step-2-title": {
+    "fontSize": 20
+  },
+  "style:case-ip-visual-step-2-copy": {
+    "fontSize": 20
+  },
+  "style:case-ip-visual-step-3-title": {
+    "fontSize": 20
+  },
+  "style:case-ip-visual-step-3-copy": {
+    "fontSize": 20
+  },
+  "style:case-ip-visual-step-4-title": {
+    "fontSize": 20
+  },
+  "style:case-ip-visual-step-4-copy": {
+    "fontSize": 20
+  },
+  "style:case-ip-visual-step-5-title": {
+    "fontSize": 20
+  },
+  "style:case-ip-visual-step-5-copy": {
+    "fontSize": 20
+  },
+  "style:projects-intro": {
+    "x": -245,
+    "width": 800,
+    "fontSize": 30
+  },
+  "style:project-club-badge-cn": {
+    "fontSize": 20
+  },
+  "style:project-horse-magnet-cn": {
+    "fontSize": 20
+  },
+  "style:project-rhino-vendor-cn": {
+    "width": 260,
+    "fontSize": 20
+  },
+  "style:project-club-identity-cn": {
+    "fontSize": 20
+  },
+  "style:project-club-newspaper-cn": {
+    "fontSize": 20
+  },
+  "style:project-ip-visual-cn": {
+    "fontSize": 20
+  },
+  "style:case-rhino-vendor-step-0-name": {
+    "fontSize": 20
+  },
+  "style:case-rhino-vendor-step-0-title": {
+    "fontSize": 20
+  },
+  "style:case-rhino-vendor-step-0-copy": {
+    "fontSize": 20
+  },
+  "style:case-rhino-vendor-step-1-name": {
+    "fontSize": 20
+  },
+  "style:case-rhino-vendor-step-1-title": {
+    "fontSize": 20
+  },
+  "style:case-rhino-vendor-step-1-copy": {
+    "fontSize": 20
+  },
+  "style:case-rhino-vendor-step-2-name": {
+    "fontSize": 20
+  },
+  "style:case-rhino-vendor-step-2-title": {
+    "fontSize": 20
+  },
+  "style:case-rhino-vendor-step-2-copy": {
+    "fontSize": 20
+  },
+  "style:case-rhino-vendor-step-3-name": {
+    "fontSize": 20
+  },
+  "style:case-rhino-vendor-step-3-title": {
+    "fontSize": 20
+  },
+  "style:case-rhino-vendor-step-3-copy": {
+    "fontSize": 20
+  },
+  "style:case-rhino-vendor-step-4-name": {
+    "fontSize": 20
+  },
+  "style:case-rhino-vendor-step-4-title": {
+    "fontSize": 20
+  },
+  "style:case-rhino-vendor-step-4-copy": {
+    "fontSize": 20
+  },
+  "style:case-rhino-vendor-step-5-name": {
+    "fontSize": 20
+  },
+  "style:case-rhino-vendor-step-5-title": {
+    "fontSize": 20
+  },
+  "style:case-rhino-vendor-step-5-copy": {
+    "fontSize": 20
+  },
+  "style:case-horse-magnet-step-0-name": {
+    "fontSize": 20
+  },
+  "style:case-horse-magnet-step-0-title": {
+    "fontSize": 20
+  },
+  "style:case-horse-magnet-step-0-copy": {
+    "fontSize": 20
+  },
+  "style:case-horse-magnet-step-1-name": {
+    "fontSize": 20
+  },
+  "style:case-horse-magnet-step-1-title": {
+    "fontSize": 20
+  },
+  "style:case-horse-magnet-step-1-copy": {
+    "fontSize": 20
+  },
+  "style:case-horse-magnet-step-2-name": {
+    "fontSize": 20
+  },
+  "style:case-horse-magnet-step-2-title": {
+    "fontSize": 20
+  },
+  "style:case-horse-magnet-step-2-copy": {
+    "fontSize": 20
+  },
+  "style:case-horse-magnet-step-3-name": {
+    "fontSize": 20
+  },
+  "style:case-horse-magnet-step-3-title": {
+    "fontSize": 20
+  },
+  "style:case-horse-magnet-step-3-copy": {
+    "fontSize": 20
+  },
+  "style:case-horse-magnet-step-4-name": {
+    "fontSize": 20
+  },
+  "style:case-horse-magnet-step-4-title": {
+    "fontSize": 20
+  },
+  "style:case-horse-magnet-step-4-copy": {
+    "fontSize": 20
+  },
+  "style:case-horse-magnet-step-5-name": {
+    "fontSize": 20
+  },
+  "style:case-horse-magnet-step-5-title": {
+    "fontSize": 20
+  },
+  "style:case-horse-magnet-step-5-copy": {
+    "fontSize": 20
+  },
+  "style:case-club-badge-step-0-name": {
+    "fontSize": 20
+  },
+  "style:case-club-badge-step-0-title": {
+    "fontSize": 20
+  },
+  "style:case-club-badge-step-0-copy": {
+    "fontSize": 20
+  },
+  "style:case-club-badge-step-1-name": {
+    "fontSize": 20
+  },
+  "style:case-club-badge-step-1-title": {
+    "fontSize": 20
+  },
+  "style:case-club-badge-step-1-copy": {
+    "fontSize": 20
+  },
+  "style:case-club-badge-step-2-name": {
+    "fontSize": 20
+  },
+  "style:case-club-badge-step-2-title": {
+    "fontSize": 20
+  },
+  "style:case-club-badge-step-2-copy": {
+    "fontSize": 20
+  },
+  "style:case-club-badge-step-3-name": {
+    "fontSize": 20
+  },
+  "style:case-club-badge-step-3-title": {
+    "fontSize": 20
+  },
+  "style:case-club-badge-step-3-copy": {
+    "fontSize": 20
+  },
+  "style:case-club-badge-step-4-name": {
+    "fontSize": 20
+  },
+  "style:case-club-badge-step-4-title": {
+    "fontSize": 20
+  },
+  "style:case-club-badge-step-4-copy": {
+    "fontSize": 20
+  },
+  "style:case-club-badge-step-5-name": {
+    "fontSize": 20
+  },
+  "style:case-club-badge-step-5-title": {
+    "fontSize": 20
+  },
+  "style:case-club-badge-step-5-copy": {
+    "fontSize": 20
+  },
+  "style:case-club-identity-step-0-name": {
+    "fontSize": 20
+  },
+  "style:case-club-identity-step-0-title": {
+    "fontSize": 20
+  },
+  "style:case-club-identity-step-0-copy": {
+    "fontSize": 20
+  },
+  "style:case-club-identity-step-1-name": {
+    "fontSize": 20
+  },
+  "style:case-club-identity-step-1-title": {
+    "fontSize": 20
+  },
+  "style:case-club-identity-step-1-copy": {
+    "fontSize": 20
+  },
+  "style:case-club-identity-step-2-name": {
+    "fontSize": 20
+  },
+  "style:case-club-identity-step-2-title": {
+    "fontSize": 20
+  },
+  "style:case-club-identity-step-2-copy": {
+    "fontSize": 20
+  },
+  "style:case-club-identity-step-3-name": {
+    "fontSize": 20
+  },
+  "style:case-club-identity-step-3-title": {
+    "fontSize": 20
+  },
+  "style:case-club-identity-step-3-copy": {
+    "fontSize": 20
+  },
+  "style:case-club-identity-step-4-name": {
+    "fontSize": 20
+  },
+  "style:case-club-identity-step-4-title": {
+    "fontSize": 20
+  },
+  "style:case-club-identity-step-4-copy": {
+    "fontSize": 20
+  },
+  "style:case-club-identity-step-5-name": {
+    "fontSize": 20
+  },
+  "style:case-club-identity-step-5-title": {
+    "fontSize": 20
+  },
+  "style:case-club-identity-step-5-copy": {
+    "fontSize": 20
+  },
+  "style:case-rhino-vendor-tag-0": {
+    "fontSize": 20
+  },
+  "style:case-rhino-vendor-tag-1": {
+    "fontSize": 20
+  },
+  "style:case-rhino-vendor-tag-2": {
+    "fontSize": 20
+  },
+  "style:case-rhino-vendor-tag-3": {
+    "fontSize": 20
+  },
+  "style:case-horse-magnet-tag-0": {
+    "fontSize": 20
+  },
+  "style:case-horse-magnet-tag-1": {
+    "fontSize": 20
+  },
+  "style:case-horse-magnet-tag-2": {
+    "fontSize": 20
+  },
+  "style:case-horse-magnet-tag-3": {
+    "fontSize": 20
+  },
+  "style:case-club-badge-tag-3": {
+    "fontSize": 20
+  },
+  "style:case-club-badge-tag-2": {
+    "fontSize": 20
+  },
+  "style:case-club-badge-tag-1": {
+    "fontSize": 20
+  },
+  "style:case-club-badge-tag-0": {
+    "fontSize": 20
+  },
+  "style:case-club-identity-tag-0": {
+    "fontSize": 20
+  },
+  "style:case-club-identity-tag-1": {
+    "fontSize": 20
+  },
+  "style:case-club-identity-tag-2": {
+    "fontSize": 20
+  },
+  "style:case-club-identity-tag-3": {
+    "fontSize": 20
+  },
+  "style:case-club-newspaper-tag-0": {
+    "fontSize": 20
+  },
+  "style:case-club-newspaper-tag-1": {
+    "fontSize": 20
+  },
+  "style:case-club-newspaper-tag-2": {
+    "fontSize": 20
+  },
+  "style:case-club-newspaper-tag-3": {
+    "fontSize": 20
+  },
+  "style:case-ip-visual-tag-0": {
+    "fontSize": 20
+  },
+  "style:case-ip-visual-tag-1": {
+    "fontSize": 20
+  },
+  "style:case-ip-visual-tag-2": {
+    "fontSize": 20
+  },
+  "style:case-ip-visual-tag-3": {
+    "fontSize": 20
+  },
+  "style:metric-0-label": {
+    "fontSize": 15
+  },
+  "style:metric-1-label": {
+    "fontSize": 15
+  },
+  "style:metric-2-label": {
+    "fontSize": 15
+  },
+  "style:metric-3-label": {
+    "fontSize": 15
+  },
+  "style:capabilities-title-2": {
+    "x": -168,
+    "width": 800,
+    "fontSize": 140
+  },
+  "style:capabilities-title-1": {
+    "x": 2,
+    "width": 7000,
+    "fontSize": 150
+  }
+}
