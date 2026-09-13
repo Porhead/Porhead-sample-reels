@@ -1,0 +1,12 @@
+node_modules/
+dist/
+runtime/
+test-build/
+test-build-2/
+*.zip
+Porhead-For-Friend.zip
+*.log
+.DS_Store
+Thumbs.db
+.vercel
+.git
